@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Norse;
+    src: url(./font/Norse-Bold.otf);
+}
+
+
+/*css reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,7 +70,34 @@ body {
     border: var(--basic-outline);
     height: 100vh;
     width: 30%;
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
     
+}
+
+.logo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 20vh;
+    height: 10vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.odin {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: Norse;
+    width: 0%;
+}
+
+.face {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .main {
