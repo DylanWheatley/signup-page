@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -51,13 +51,41 @@ table {
 
 
 
-
-
-
 :root {
     --basic-outline: black solid 1px;
+    --grey-background: #f4f4f4
 
 }
+
+/* top right div */
+.intro-top, .intro-bottom {
+    position: absolute;
+}
+
+.intro-top {
+    top: 9vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 2.5rem;
+    width: 45%;
+    
+}
+
+.intro-bottom {
+    top: 19vh;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 2.5rem;
+}
+
+.intro {
+    /* outline: var(--basic-outline); */
+    height: 25%;
+    background-color: var(--grey-background);
+}
+
+
+
 
 
 body {
@@ -66,6 +94,7 @@ body {
     
 }
 
+/* left sidebar with image */
 .sidebar {
     border: var(--basic-outline);
     height: 100vh;
@@ -108,10 +137,6 @@ body {
     
 }
 
-.intro {
-    outline: var(--basic-outline);
-    height: 25%;
-}
 
 .fields {
     outline: var(--basic-outline);
